@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from '../css/todoItemComponents.module.css'
 
-
+/*** 
+ * TODO Item 설정
+ * ***/
 function TodoItemComponents ({todoItems, onRemoveTodoItems, onSuccessedCheck}){
-    // console.log(todoItems);
+    // todo item 제거
     const removeItem = (id) => {
         onRemoveTodoItems(id)
     }
+    // todo item 체크
     const clickItem = (id) => {
         onSuccessedCheck(id)
     }

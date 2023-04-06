@@ -3,9 +3,12 @@ import '../css/modalTemplate.css'
 import InputTemplate from './inputTemplate';
 import TodoItemComponents from './todoItemComponents';
 
-
+/*** 
+ * 카테고리별 TODO item 관리 하기 위한 Modal창
+ * ***/
 function ModalTemplate (props) {
     const {open, close, todoTemplate, todoItems, onCreateTodoItems, onRemoveTodoItems, onSuccessedCheck} = props;
+    // 입력창 관리
     const [inputs, setInputs] = useState({
         inputValue : ''
       });
@@ -17,7 +20,7 @@ function ModalTemplate (props) {
     });
     }
     const {inputValue} =inputs;
-
+    // todo item 생성
     const nextID = useRef(3);
     const onCreateItem = () =>{
         const item = {
@@ -44,7 +47,6 @@ function ModalTemplate (props) {
                 </header>
                 <main>
                     <InputTemplate  onChange={onChange} inputs={inputs} onCreate={onCreateItem} value={"+"}/>
-                    
                     <div className='todoContents'>
                         {todoItems.filter(item => item.todoTitleId === todoTemplate.todoTitleId).map((item) => (
                             <TodoItemComponents key={item.itemId} todoItems={item} onRemoveTodoItems={onRemoveTodoItems} onSuccessedCheck={onSuccessedCheck}/>
@@ -54,9 +56,6 @@ function ModalTemplate (props) {
                 </main>
                 <footer>
                     <p>{ "전체: " + todoItems.filter(item => item.todoTitleId === todoTemplate.todoTitleId).length + "완료 : " + todoItems.filter(item => item.todoTitleId === todoTemplate.todoTitleId).filter(item => item.successed === true).length }</p>
-                    {/* <button className="close" onClick={close}>
-                        close
-                    </button> */}
                 </footer>
             </section>
             ) : null}
