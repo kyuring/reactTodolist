@@ -1,0 +1,41 @@
+.Box {
+    display: block;
+    background-color: #b6b7d8;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px 10px;
+    color: #03045E;
+    min-width: 200px;
+}
+h1 {
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+}
+p {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-left: -10px;
+}
+.first{
+    display: block;
+    font-size: large;
+}
+.btnRemove{
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    width: 45px;
+    border: none;
+    background-color: #6D23B6;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px 0px 30px 30px;
+}

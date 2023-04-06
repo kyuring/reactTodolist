@@ -1,0 +1,84 @@
+.box{
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+    padding : 0;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}
+.item{
+    height: 100%;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    color: #03045E;
+    border: none;
+}
+.itemSuccessed{
+    height: 100%;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    color : #03045E;
+    border: none;
+}
+.strItem {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    padding: 10px;
+}
+.strItemSuccessed {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    padding: 10px;
+    text-decoration-color : #6D23B6;
+    text-decoration: line-through;
+    text-decoration-thickness : 2px;
+}
+.buttonBox {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+}
+.btnCheck {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+}
+
+.btnCheck:hover{
+    background-color: #6D23B6;
+    color: white;
+}
+.btnChecked {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+    background-color: #6D23B6;
+}
+.btnRemove {
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+}
+
+.btnRemove:hover{
+    background-color: red;
+    color: white;
+}
